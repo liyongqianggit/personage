@@ -27,4 +27,4 @@ alter table 表名 convert to character set 字符集;
 alter table 表名 modify 字段名 字段属性 character set 字符集；
 
 创建表时指定字符集
-在末尾添加 ENGINE=InnoDB DEFAULT CHARSET=字符集 属性;
+在末尾添加 ENGINE=InnoDB DEFAULT CHARSET=字符集
