@@ -1,0 +1,8 @@
+数据库操作
+mysqldump 导出提示Couldn‘t execute SELECT COLUMN_NAME...
+错误提示:
+mysqldump: Couldn’t execute 'SELECT COLUMN_NAME, JSON_EXTRACT(HISTOGRAM, ‘$.“number-of-buckets-specified”’) FROM information_schema.COLUMN_STATISTICS
+原因:
+因为新版的mysqldump默认启用了一个新标志，通过--column-statistics=0来禁用他
+解决方法:
+在导出命令中添加 --column-statistics=0 属性
