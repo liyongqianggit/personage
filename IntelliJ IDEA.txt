@@ -1,4 +1,4 @@
-Intellij Idea 某个提示功能disable，想恢复怎么做
+Intellij Idea 误操作导致某个提示功能被disable，想要恢复
 Mac
 Preferences->Editor->Intentions->没选的勾选上就可以了
 Windows
