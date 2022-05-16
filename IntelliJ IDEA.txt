@@ -1,0 +1,5 @@
+Intellij Idea 某个提示功能disable，想恢复怎么做
+Mac
+Preferences->Editor->Intentions->没选的勾选上就可以了
+Windows
+settings->Editor->Intentions->没选的勾选上就可以了
