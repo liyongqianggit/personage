@@ -14,8 +14,7 @@ yum-config-manager --add-repo   http://mirrors.aliyun.com/docker-ce/linux/centos
 4.安装新版 docker
 yum install -y docker-ce docker-ce-cli containerd.io
 5.启动docker
-systemctl start docker启动
-systemctl enable docker设置开机自启
+systemctl start docker  启动
 6.配置阿里云镜像加速
 点击链接自行注册阿里云账号
 https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors
@@ -28,6 +27,7 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
 EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
+systemctl enable docker  设置开机自启
 7.查看是否加速成功
 docker info
 
