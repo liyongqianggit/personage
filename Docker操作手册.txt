@@ -10,7 +10,7 @@ yum install -y yum-utils
 yum makecache fast  (centos7)
 yum makecache  (centos8)
 3.添加阿里yum源
-yum-config-manager --add-repo   http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
 4.安装新版 docker
 yum install -y docker-ce docker-ce-cli containerd.io
 5.启动docker
