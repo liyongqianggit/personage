@@ -65,7 +65,7 @@ docker volume create nginx-vol
 说明:查看数据卷对应的宿主机目录,可以通过如下指令:
 docker inspect nginx-vol
 第四步：启动nginx服务
-docker run --name --restart=always nginx  -p 80:80 -v nginx-vol:/etc/nginx -d nginx
+docker run --name nginx --restart=always -p 80:80 -v nginx-vol:/etc/nginx -d nginx
 
 四、docker安装Redis数据库
 第一步：下载镜像文件
