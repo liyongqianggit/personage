@@ -20,11 +20,11 @@ show full columns from 表名;
 
 修改字符集
 修改数据库字符集
-alter database 库名 default character set 字符集;
+alter database 库名 default character set '字符集';
 修改表的字符集
-alter table 表名 convert to character set 字符集;
+alter table 表名 convert to character set '字符集';
 修改字段的字符集
-alter table 表名 modify 字段名 字段属性 character set 字符集；
+alter table 表名 modify 字段名 字段属性 character set '字符集'；
 
 创建表时指定字符集
-在末尾添加 ENGINE=InnoDB DEFAULT CHARSET=字符集
+在末尾添加 ENGINE=InnoDB DEFAULT CHARSET='字符集'
